@@ -15,3 +15,48 @@ void TextElement::InitLayer(TextElement Layer)
     TextElement::Text   = Text_source;
     TextElement::Width  = Width_source;
 }
+std::string TextElement::getTextString()
+{
+    if ( TextElement::Text.empty() ) {
+        return ErrorStringNotSet;
+    } else {
+
+        return TextElement::Text;
+    }
+}
+int TextElement::getHeight()
+{
+    if ( TextElement::Height < 0 ) {
+        return -1;
+    } else {
+
+        return TextElement::Height;
+    }
+}
+int TextElement::getWidth()
+{
+    if ( TextElement::Width < 0 ) {
+        return -1;
+    } else {
+
+        return TextElement::Width;
+    }
+}
+int TextElement::getPosX()
+{
+    if ( TextElement::PosX < 0 ) {
+        return -1;
+    } else {
+
+        return TextElement::PosX;
+    }
+}
+int TextElement::getPosY()
+{
+    if ( TextElement::PosY < 0 ) {
+        return -1;
+    } else {
+
+        return TextElement::PosY;
+    }
+}

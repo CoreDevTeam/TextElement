@@ -3,16 +3,25 @@
 
 #include <string>
 
+#include "ErrorCode.h"
+
 class TextElement {
 
 private :
     std::string Text;
-    int Height,Width,PosX,PosY;
+    unsigned int Height,Width,PosX,PosY;
 
 public :
     TextElement();
 
     void InitLayer(TextElement Layer);
+
+    //getter
+    std::string getTextString();
+    int getHeight();
+    int getWidth();
+    int getPosX();
+    int getPosY();
 };
 
 #endif // TEXTELEMENT_H_INCLUDED
