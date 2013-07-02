@@ -32,6 +32,9 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="ErrorCode.h" />
+		<Unit filename="TextElement.h" />
+		<Unit filename="TextElement_source.cpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
